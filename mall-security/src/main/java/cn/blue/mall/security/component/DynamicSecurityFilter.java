@@ -1,6 +1,6 @@
-package com.macro.mall.security.component;
+package cn.blue.mall.security.component;
 
-import com.macro.mall.security.config.IgnoreUrlsConfig;
+import cn.blue.mall.security.config.IgnoreUrlsConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.access.SecurityMetadataSource;

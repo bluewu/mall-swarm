@@ -1,6 +1,6 @@
-package com.macro.mall.security.component;
+package cn.blue.mall.security.component;
 
-import com.macro.mall.security.util.JwtTokenUtil;
+import cn.blue.mall.security.util.JwtTokenUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
-package com.macro.mall.security.config;
+package cn.blue.mall.security.config;
 
-import com.macro.mall.security.component.*;
-import com.macro.mall.security.util.JwtTokenUtil;
+import cn.blue.mall.security.component.*;
+import cn.blue.mall.security.util.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;

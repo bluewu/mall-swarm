@@ -1,10 +1,9 @@
-package com.macro.mall.security.component;
+package cn.blue.mall.security.component;
 
 import cn.hutool.json.JSONUtil;
-import com.macro.mall.common.api.CommonResult;
+import cn.blue.mall.common.api.CommonResult;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
-import org.springframework.stereotype.Component;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
