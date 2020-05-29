@@ -1,4 +1,4 @@
-package com.macro.mall;
+package cn.blue.mall;
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
