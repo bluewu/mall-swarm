@@ -5,9 +5,9 @@ spring:
     password: root
   data:
     mongodb:
-      host: localhost
+      host: 192.168.2.135
       port: 27017
-      database: mall-port
+      database: userprod
   redis:
     host: localhost # Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
