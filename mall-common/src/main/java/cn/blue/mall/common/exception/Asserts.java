@@ -1,6 +1,6 @@
-package com.macro.mall.common.exception;
+package cn.blue.mall.common.exception;
 
-import com.macro.mall.common.api.IErrorCode;
+import cn.blue.mall.common.api.IErrorCode;
 
 /**
  * 断言处理类，用于抛出各种API异常

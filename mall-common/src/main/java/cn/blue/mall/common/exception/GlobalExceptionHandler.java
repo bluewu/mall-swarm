@@ -1,6 +1,6 @@
-package com.macro.mall.common.exception;
+package cn.blue.mall.common.exception;
 
-import com.macro.mall.common.api.CommonResult;
+import cn.blue.mall.common.api.CommonResult;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
