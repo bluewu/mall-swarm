@@ -16,9 +16,9 @@ spring:
         login-password: druid
   data:
     mongodb:
-      host: localhost
+      host: 192.168.2.135
       port: 27017
-      database: mall-port
+      database: userprod
   redis:
     host: localhost # Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
@@ -40,8 +40,8 @@ spring:
     publisher-confirms: true #如果对异步消息需要回调必须设置为true
 mybatis:
   mapper-locations:
-    - classpath:dao/*.xml
-    - classpath*:com/**/mapper/*.xml
+#    - classpath:dao/*.xml
+    - classpath:/mapper/*.xml
 management: #开启SpringBoot Admin的监控
   endpoints:
     web:
