@@ -1,4 +1,4 @@
-package com.macro.mall;
+package cn.blue.mall;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
