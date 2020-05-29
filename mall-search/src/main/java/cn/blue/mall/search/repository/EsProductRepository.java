@@ -1,6 +1,6 @@
-package com.macro.mall.search.repository;
+package cn.blue.mall.search.repository;
 
-import com.macro.mall.search.domain.EsProduct;
+import cn.blue.mall.search.domain.EsProduct;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;

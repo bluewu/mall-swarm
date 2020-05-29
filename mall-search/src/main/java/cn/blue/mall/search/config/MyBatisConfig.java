@@ -1,4 +1,4 @@
-package com.macro.mall.search.config;
+package cn.blue.mall.search.config;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,6 +8,6 @@ import org.springframework.context.annotation.Configuration;
  * Created by macro on 2019/4/8.
  */
 @Configuration
-@MapperScan({"com.macro.mall.mapper","com.macro.mall.search.dao"})
+@MapperScan({"cn.blue.mall.mapper","cn.blue.mall.search.mapper"})
 public class MyBatisConfig {
 }

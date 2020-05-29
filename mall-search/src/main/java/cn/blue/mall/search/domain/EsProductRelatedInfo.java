@@ -1,4 +1,4 @@
-package com.macro.mall.search.domain;
+package cn.blue.mall.search.domain;
 
 import java.util.List;
 

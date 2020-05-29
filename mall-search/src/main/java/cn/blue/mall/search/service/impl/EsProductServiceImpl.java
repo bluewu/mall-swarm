@@ -1,10 +1,10 @@
-package com.macro.mall.search.service.impl;
+package cn.blue.mall.search.service.impl;
 
-import com.macro.mall.search.dao.EsProductDao;
-import com.macro.mall.search.domain.EsProduct;
-import com.macro.mall.search.domain.EsProductRelatedInfo;
-import com.macro.mall.search.repository.EsProductRepository;
-import com.macro.mall.search.service.EsProductService;
+import cn.blue.mall.search.mapper.EsProductMapper;
+import cn.blue.mall.search.domain.EsProduct;
+import cn.blue.mall.search.domain.EsProductRelatedInfo;
+import cn.blue.mall.search.repository.EsProductRepository;
+import cn.blue.mall.search.service.EsProductService;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.common.lucene.search.function.FunctionScoreQuery;
 import org.elasticsearch.index.query.BoolQueryBuilder;
@@ -49,7 +49,7 @@ import java.util.Map;
 public class EsProductServiceImpl implements EsProductService {
     private static final Logger LOGGER = LoggerFactory.getLogger(EsProductServiceImpl.class);
     @Autowired
-    private EsProductDao productDao;
+    private EsProductMapper productDao;
     @Autowired
     private EsProductRepository productRepository;
     @Autowired

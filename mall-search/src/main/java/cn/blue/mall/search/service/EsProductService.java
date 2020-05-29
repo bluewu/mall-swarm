@@ -1,7 +1,7 @@
-package com.macro.mall.search.service;
+package cn.blue.mall.search.service;
 
-import com.macro.mall.search.domain.EsProduct;
-import com.macro.mall.search.domain.EsProductRelatedInfo;
+import cn.blue.mall.search.domain.EsProduct;
+import cn.blue.mall.search.domain.EsProductRelatedInfo;
 import org.springframework.data.domain.Page;
 
 import java.util.List;

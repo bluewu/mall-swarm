@@ -1,4 +1,4 @@
-package com.macro.mall.search.domain;
+package cn.blue.mall.search.domain;
 
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;

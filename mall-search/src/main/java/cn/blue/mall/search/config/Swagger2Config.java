@@ -1,4 +1,4 @@
-package com.macro.mall.search.config;
+package cn.blue.mall.search.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,7 +22,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.macro.mall.search.controller"))
+                .apis(RequestHandlerSelectors.basePackage("cn.blue.mall.search.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

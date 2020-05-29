@@ -1,10 +1,10 @@
-package com.macro.mall.search.controller;
+package cn.blue.mall.search.controller;
 
-import com.macro.mall.common.api.CommonPage;
-import com.macro.mall.common.api.CommonResult;
-import com.macro.mall.search.domain.EsProduct;
-import com.macro.mall.search.domain.EsProductRelatedInfo;
-import com.macro.mall.search.service.EsProductService;
+import cn.blue.mall.common.api.CommonPage;
+import cn.blue.mall.common.api.CommonResult;
+import cn.blue.mall.search.domain.EsProduct;
+import cn.blue.mall.search.domain.EsProductRelatedInfo;
+import cn.blue.mall.search.service.EsProductService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
