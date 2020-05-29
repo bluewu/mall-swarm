@@ -1,4 +1,4 @@
-package com.macro.mall.config;
+package cn.blue.mall.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
