@@ -1,7 +1,7 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.PmsProductVertifyRecord;
-import com.macro.mall.model.PmsProductVertifyRecordExample;
+import cn.blue.mall.model.PmsProductVertifyRecord;
+import cn.blue.mall.model.PmsProductVertifyRecordExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +27,6 @@ public interface PmsProductVertifyRecordMapper {
     int updateByPrimaryKeySelective(PmsProductVertifyRecord record);
 
     int updateByPrimaryKey(PmsProductVertifyRecord record);
+
+    int insertList(@Param("list") List<PmsProductVertifyRecord> list);
 }

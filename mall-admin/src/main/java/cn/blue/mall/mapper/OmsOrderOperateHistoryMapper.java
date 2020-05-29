@@ -1,7 +1,7 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.OmsOrderOperateHistory;
-import com.macro.mall.model.OmsOrderOperateHistoryExample;
+import cn.blue.mall.model.OmsOrderOperateHistory;
+import cn.blue.mall.model.OmsOrderOperateHistoryExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +27,9 @@ public interface OmsOrderOperateHistoryMapper {
     int updateByPrimaryKeySelective(OmsOrderOperateHistory record);
 
     int updateByPrimaryKey(OmsOrderOperateHistory record);
+
+    /**
+     * 批量创建
+     */
+    int insertList(@Param("list") List<OmsOrderOperateHistory> orderOperateHistoryList);
 }

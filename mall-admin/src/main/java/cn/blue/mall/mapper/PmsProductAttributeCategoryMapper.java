@@ -1,7 +1,8 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.PmsProductAttributeCategory;
-import com.macro.mall.model.PmsProductAttributeCategoryExample;
+import cn.blue.mall.dto.PmsProductAttributeCategoryItem;
+import cn.blue.mall.model.PmsProductAttributeCategory;
+import cn.blue.mall.model.PmsProductAttributeCategoryExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +28,9 @@ public interface PmsProductAttributeCategoryMapper {
     int updateByPrimaryKeySelective(PmsProductAttributeCategory record);
 
     int updateByPrimaryKey(PmsProductAttributeCategory record);
+
+    /**
+     * 获取商品属性分类，包括属性
+     */
+    List<PmsProductAttributeCategoryItem> getListWithAttr();
 }

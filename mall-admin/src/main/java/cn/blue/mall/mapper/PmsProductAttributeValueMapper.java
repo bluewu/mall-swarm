@@ -1,7 +1,7 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.PmsProductAttributeValue;
-import com.macro.mall.model.PmsProductAttributeValueExample;
+import cn.blue.mall.model.PmsProductAttributeValue;
+import cn.blue.mall.model.PmsProductAttributeValueExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +27,9 @@ public interface PmsProductAttributeValueMapper {
     int updateByPrimaryKeySelective(PmsProductAttributeValue record);
 
     int updateByPrimaryKey(PmsProductAttributeValue record);
+
+    /**
+     * 批量创建
+     */
+    int insertList(@Param("list")List<PmsProductAttributeValue> productAttributeValueList);
 }

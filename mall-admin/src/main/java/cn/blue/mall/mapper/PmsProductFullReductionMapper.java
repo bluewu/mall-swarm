@@ -1,7 +1,7 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.PmsProductFullReduction;
-import com.macro.mall.model.PmsProductFullReductionExample;
+import cn.blue.mall.model.PmsProductFullReduction;
+import cn.blue.mall.model.PmsProductFullReductionExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +27,9 @@ public interface PmsProductFullReductionMapper {
     int updateByPrimaryKeySelective(PmsProductFullReduction record);
 
     int updateByPrimaryKey(PmsProductFullReduction record);
+
+    /**
+     * 批量创建
+     */
+    int insertList(@Param("list") List<PmsProductFullReduction> productFullReductionList);
 }

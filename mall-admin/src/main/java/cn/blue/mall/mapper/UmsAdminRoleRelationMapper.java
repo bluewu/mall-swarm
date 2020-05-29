@@ -1,7 +1,10 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.UmsAdminRoleRelation;
-import com.macro.mall.model.UmsAdminRoleRelationExample;
+import cn.blue.mall.model.UmsAdminRoleRelation;
+import cn.blue.mall.model.UmsAdminRoleRelationExample;
+import cn.blue.mall.model.UmsPermission;
+import cn.blue.mall.model.UmsResource;
+import cn.blue.mall.model.UmsRole;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +30,29 @@ public interface UmsAdminRoleRelationMapper {
     int updateByPrimaryKeySelective(UmsAdminRoleRelation record);
 
     int updateByPrimaryKey(UmsAdminRoleRelation record);
+
+    /**
+     * 批量插入用户角色关系
+     */
+    int insertList(@Param("list") List<UmsAdminRoleRelation> adminRoleRelationList);
+
+    /**
+     * 获取用于所有角色
+     */
+    List<UmsRole> getRoleList(@Param("adminId") Long adminId);
+
+    /**
+     * 获取用户所有角色权限
+     */
+    List<UmsPermission> getRolePermissionList(@Param("adminId") Long adminId);
+
+    /**
+     * 获取用户所有权限(包括+-权限)
+     */
+    List<UmsPermission> getPermissionList(@Param("adminId") Long adminId);
+
+    /**
+     * 获取用户所有可访问资源
+     */
+    List<UmsResource> getResourceList(@Param("adminId") Long adminId);
 }

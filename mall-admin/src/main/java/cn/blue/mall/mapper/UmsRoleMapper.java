@@ -1,7 +1,9 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.UmsRole;
-import com.macro.mall.model.UmsRoleExample;
+import cn.blue.mall.model.UmsMenu;
+import cn.blue.mall.model.UmsResource;
+import cn.blue.mall.model.UmsRole;
+import cn.blue.mall.model.UmsRoleExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +29,10 @@ public interface UmsRoleMapper {
     int updateByPrimaryKeySelective(UmsRole record);
 
     int updateByPrimaryKey(UmsRole record);
+
+    List<UmsMenu> getMenuList(@Param("adminId") Long adminId);
+
+    List<UmsMenu> getMenuListByRoleId(@Param("roleId") Long roleId);
+
+    List<UmsResource> getResourceListByRoleId(@Param("roleId") Long roleId);
 }

@@ -1,7 +1,8 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.SmsCoupon;
-import com.macro.mall.model.SmsCouponExample;
+import cn.blue.mall.dto.SmsCouponParam;
+import cn.blue.mall.model.SmsCoupon;
+import cn.blue.mall.model.SmsCouponExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +28,6 @@ public interface SmsCouponMapper {
     int updateByPrimaryKeySelective(SmsCoupon record);
 
     int updateByPrimaryKey(SmsCoupon record);
+
+    SmsCouponParam getItem(@Param("id") Long id);
 }

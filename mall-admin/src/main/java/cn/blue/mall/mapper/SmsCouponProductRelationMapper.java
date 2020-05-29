@@ -1,7 +1,7 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.SmsCouponProductRelation;
-import com.macro.mall.model.SmsCouponProductRelationExample;
+import cn.blue.mall.model.SmsCouponProductRelation;
+import cn.blue.mall.model.SmsCouponProductRelationExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +27,6 @@ public interface SmsCouponProductRelationMapper {
     int updateByPrimaryKeySelective(SmsCouponProductRelation record);
 
     int updateByPrimaryKey(SmsCouponProductRelation record);
+
+    int insertList(@Param("list")List<SmsCouponProductRelation> productRelationList);
 }

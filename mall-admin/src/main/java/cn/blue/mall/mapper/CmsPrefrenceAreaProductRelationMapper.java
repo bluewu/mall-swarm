@@ -1,7 +1,7 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.CmsPrefrenceAreaProductRelation;
-import com.macro.mall.model.CmsPrefrenceAreaProductRelationExample;
+import cn.blue.mall.model.CmsPrefrenceAreaProductRelation;
+import cn.blue.mall.model.CmsPrefrenceAreaProductRelationExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +27,9 @@ public interface CmsPrefrenceAreaProductRelationMapper {
     int updateByPrimaryKeySelective(CmsPrefrenceAreaProductRelation record);
 
     int updateByPrimaryKey(CmsPrefrenceAreaProductRelation record);
+
+    /**
+     * 批量创建
+     */
+    int insertList(@Param("list") List<CmsPrefrenceAreaProductRelation> prefrenceAreaProductRelationList);
 }

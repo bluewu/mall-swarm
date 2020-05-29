@@ -1,7 +1,8 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.PmsProductAttribute;
-import com.macro.mall.model.PmsProductAttributeExample;
+import cn.blue.mall.dto.ProductAttrInfo;
+import cn.blue.mall.model.PmsProductAttribute;
+import cn.blue.mall.model.PmsProductAttributeExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +28,9 @@ public interface PmsProductAttributeMapper {
     int updateByPrimaryKeySelective(PmsProductAttribute record);
 
     int updateByPrimaryKey(PmsProductAttribute record);
+
+    /**
+     * 获取商品属性信息
+     */
+    List<ProductAttrInfo> getProductAttrInfo(@Param("id") Long productCategoryId);
 }

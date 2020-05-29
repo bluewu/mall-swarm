@@ -1,7 +1,7 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.UmsAdminPermissionRelation;
-import com.macro.mall.model.UmsAdminPermissionRelationExample;
+import cn.blue.mall.model.UmsAdminPermissionRelation;
+import cn.blue.mall.model.UmsAdminPermissionRelationExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +27,6 @@ public interface UmsAdminPermissionRelationMapper {
     int updateByPrimaryKeySelective(UmsAdminPermissionRelation record);
 
     int updateByPrimaryKey(UmsAdminPermissionRelation record);
+
+    int insertList(@Param("list") List<UmsAdminPermissionRelation> list);
 }

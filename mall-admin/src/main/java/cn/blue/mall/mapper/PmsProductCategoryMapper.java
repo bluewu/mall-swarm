@@ -1,7 +1,8 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.PmsProductCategory;
-import com.macro.mall.model.PmsProductCategoryExample;
+import cn.blue.mall.dto.PmsProductCategoryWithChildrenItem;
+import cn.blue.mall.model.PmsProductCategory;
+import cn.blue.mall.model.PmsProductCategoryExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -33,4 +34,9 @@ public interface PmsProductCategoryMapper {
     int updateByPrimaryKeyWithBLOBs(PmsProductCategory record);
 
     int updateByPrimaryKey(PmsProductCategory record);
+
+    /**
+     * 获取商品分类包括子分类
+     */
+    List<PmsProductCategoryWithChildrenItem> listWithChildren();
 }

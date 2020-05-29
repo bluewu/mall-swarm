@@ -1,7 +1,7 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.PmsSkuStock;
-import com.macro.mall.model.PmsSkuStockExample;
+import cn.blue.mall.model.PmsSkuStock;
+import cn.blue.mall.model.PmsSkuStockExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +27,14 @@ public interface PmsSkuStockMapper {
     int updateByPrimaryKeySelective(PmsSkuStock record);
 
     int updateByPrimaryKey(PmsSkuStock record);
+
+    /**
+     * 批量插入操作
+     */
+    int insertList(@Param("list")List<PmsSkuStock> skuStockList);
+
+    /**
+     * 批量插入或替换操作
+     */
+    int replaceList(@Param("list")List<PmsSkuStock> skuStockList);
 }

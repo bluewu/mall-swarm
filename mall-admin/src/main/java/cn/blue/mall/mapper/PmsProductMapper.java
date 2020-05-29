@@ -1,7 +1,8 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.PmsProduct;
-import com.macro.mall.model.PmsProductExample;
+import cn.blue.mall.dto.PmsProductResult;
+import cn.blue.mall.model.PmsProduct;
+import cn.blue.mall.model.PmsProductExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -33,4 +34,9 @@ public interface PmsProductMapper {
     int updateByPrimaryKeyWithBLOBs(PmsProduct record);
 
     int updateByPrimaryKey(PmsProduct record);
+
+    /**
+     * 获取商品编辑信息
+     */
+    PmsProductResult getUpdateInfo(@Param("id") Long id);
 }

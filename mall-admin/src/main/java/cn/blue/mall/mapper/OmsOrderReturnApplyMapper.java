@@ -1,7 +1,9 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.OmsOrderReturnApply;
-import com.macro.mall.model.OmsOrderReturnApplyExample;
+import cn.blue.mall.dto.OmsOrderReturnApplyResult;
+import cn.blue.mall.dto.OmsReturnApplyQueryParam;
+import cn.blue.mall.model.OmsOrderReturnApply;
+import cn.blue.mall.model.OmsOrderReturnApplyExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +29,14 @@ public interface OmsOrderReturnApplyMapper {
     int updateByPrimaryKeySelective(OmsOrderReturnApply record);
 
     int updateByPrimaryKey(OmsOrderReturnApply record);
+
+    /**
+     * 查询申请列表
+     */
+    List<OmsOrderReturnApply> getList(@Param("queryParam") OmsReturnApplyQueryParam queryParam);
+
+    /**
+     * 获取申请详情
+     */
+    OmsOrderReturnApplyResult getDetail(@Param("id")Long id);
 }

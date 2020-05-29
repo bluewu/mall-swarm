@@ -1,7 +1,7 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.CmsSubjectProductRelation;
-import com.macro.mall.model.CmsSubjectProductRelationExample;
+import cn.blue.mall.model.CmsSubjectProductRelation;
+import cn.blue.mall.model.CmsSubjectProductRelationExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +27,9 @@ public interface CmsSubjectProductRelationMapper {
     int updateByPrimaryKeySelective(CmsSubjectProductRelation record);
 
     int updateByPrimaryKey(CmsSubjectProductRelation record);
+
+    /**
+     * 批量创建
+     */
+    int insertList(@Param("list") List<CmsSubjectProductRelation> subjectProductRelationList);
 }

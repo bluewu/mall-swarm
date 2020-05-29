@@ -1,7 +1,7 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.PmsProductCategoryAttributeRelation;
-import com.macro.mall.model.PmsProductCategoryAttributeRelationExample;
+import cn.blue.mall.model.PmsProductCategoryAttributeRelation;
+import cn.blue.mall.model.PmsProductCategoryAttributeRelationExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +27,9 @@ public interface PmsProductCategoryAttributeRelationMapper {
     int updateByPrimaryKeySelective(PmsProductCategoryAttributeRelation record);
 
     int updateByPrimaryKey(PmsProductCategoryAttributeRelation record);
+
+    /**
+     * 批量创建
+     */
+    int insertList(@Param("list") List<PmsProductCategoryAttributeRelation> productCategoryAttributeRelationList);
 }

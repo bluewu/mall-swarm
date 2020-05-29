@@ -1,7 +1,8 @@
-package com.macro.mall.mapper;
+package cn.blue.mall.mapper;
 
-import com.macro.mall.model.SmsFlashPromotionProductRelation;
-import com.macro.mall.model.SmsFlashPromotionProductRelationExample;
+import cn.blue.mall.dto.SmsFlashPromotionProduct;
+import cn.blue.mall.model.SmsFlashPromotionProductRelation;
+import cn.blue.mall.model.SmsFlashPromotionProductRelationExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,4 +28,9 @@ public interface SmsFlashPromotionProductRelationMapper {
     int updateByPrimaryKeySelective(SmsFlashPromotionProductRelation record);
 
     int updateByPrimaryKey(SmsFlashPromotionProductRelation record);
+
+    /**
+     * 获取限时购及相关商品信息
+     */
+    List<SmsFlashPromotionProduct> getList(@Param("flashPromotionId") Long flashPromotionId, @Param("flashPromotionSessionId") Long flashPromotionSessionId);
 }
